@@ -1,0 +1,154 @@
+<div class="row m-0 address">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="edit" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                <i class="fa-solid fa-truck-fast"></i> Giao hàng tận nơi
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="list" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                <i class="fa-solid fa-shop"></i> Đặt đến lấy
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control fs-3" placeholder="Vui lòng nhập địa chỉ nhận hàng!" aria-label="Vui lòng nhập địa chỉ nhận hàng!" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                    <i class="fa-solid fa-paper-plane fs-3"></i>
+                </button>
+            </div>
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control fs-3" placeholder="Vui lòng nhập địa chỉ chi nhánh bạn nhận hàng!" aria-label="Vui lòng nhập địa chỉ chi nhánh bạn nhận hàng!" aria-describedby="button-addon3">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon3">
+                    <i class="fa-solid fa-paper-plane fs-3"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center align-items-center g-2 m-0" ng-controller="productCtrl">
+    <!-- Nav tabs -->
+    <ul class="nav nav-underline justify-content-center" id="myMenu" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="khuyenmai-tab" data-bs-toggle="tab" data-bs-target="#khuyenmai" type="button" role="tab" aria-controls="khuyenmai" aria-selected="false">Khuyến Mại Mỗi Ngày</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pizza-tab" data-bs-toggle="tab" data-bs-target="#pizza" type="button" role="tab" aria-controls="pizza" aria-selected="true">Pizza</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="monphu-tab" data-bs-toggle="tab" data-bs-target="#monphu" type="button" role="tab" aria-controls="monphu" aria-selected="false">Món Phụ</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="trangmieng-tab" data-bs-toggle="tab" data-bs-target="#trangmieng" type="button" role="tab" aria-controls="trangmieng" aria-selected="false">Tráng Miệng</button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="thucuong-tab" data-bs-toggle="tab" data-bs-target="#thucuong" type="button" role="tab" aria-controls="thucuong" aria-selected="false">Thức uống</button>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane" id="khuyenmai" role="tabpanel" aria-labelledby="khuyenmai-tab" tabindex="0">
+            <div class="card card-sale border border-0 m-5 " ng-controller="saleCtrl">
+                <div class="row m-0 border border-0 mb-4" ng-repeat="s in sales | orderBy: prop">
+                    <div class="col-sm-3 overflow-hidden border border-2 rounded-4">
+                        <a href=""><img src="{{s.img}}" class="card-img" alt=""></a>
+                    </div>
+                    <div class="col-sm-9 border border-2 rounded-4">
+                        <div class="card-body">
+                            <a href="" style="text-decoration: none; color: #FF9900; font-size: 30px;">{{s.title}}</a>
+                            <hr class="title-hr mt-0 mb-2">
+                            <p> <strong> {{s.content}}</strong> </p>
+                            <p> <strong> {{s.time}}</strong> </p>
+                            <button class="btn-buy">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab" tabindex="0">
+            <div class="row justify-content-center g-2">
+                <div class="col-4 " ng-repeat="p in products ">
+                    <div class="card text-start rounded-0 d-flex flex-column">
+                        <div class="card-header text-center rounded-0"> 
+                            <a href="#!/chitietsp" ng-click="showProducDetail(p)">
+                                {{p.name}} 
+                            </a>
+                        </div>
+                        <div class="card-body p-0 d-flex align-items-stretch">
+                            <img src="{{p.img}}" alt="" srcset="" class="img-thumbnail rounded-0 p-0 img-pizza">
+                        </div>
+                        <div class="card-footer text-center rounded-0">{{p.price | currency:"":0}} VNĐ</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <ul class="pager" style="display: box; justify-content: center;">
+                <li style="display: inline-block; padding: 10px; border: 1px solid #000;"> <a href="#" ng-click="first()"> <i class="fa-solid fa-backward-fast"></i> </a> </li>
+                <li style="display: inline-block; padding: 10px; border: 1px solid #000;"> <a href="#" ng-click="prev()"> <i class="fa-solid fa-backward-step"></i> </a> </li>
+                <li style="display: inline-block; padding: 10px; border: 1px solid #000;"> <a href="#" ng-click="next()"> <i class="fa-solid fa-forward-step"></i> </a> </li>
+                <li style="display: inline-block; padding: 10px; border: 1px solid #000;"> <a href="#" ng-click="last()"> <i class="fa-solid fa-forward-fast"></i> </a> </li>
+            </ul>
+           -->
+            
+        </div>
+        <div class="tab-pane" id="monphu" role="tabpanel" aria-labelledby="monphu-tab" tabindex="0">
+            <div class="row justify-content-center g-2" ng-controller="extraMealsCtrl">
+                <div class="col-4 " ng-repeat="m in meals | orderBy: prop">
+                    <div class="card text-start rounded-0 d-flex flex-column">
+                        <div class="card-header text-center rounded-0"> 
+                            <a href="#!/chitietsp">
+                                {{m.name}} 
+                            </a>
+                        </div>
+                        <div class="card-body p-0 d-flex align-items-stretch">
+                            <img src="{{m.img}}" alt="" srcset="" class="img-thumbnail rounded-0 p-0 img-pizza">
+                        </div>
+                        <div class="card-footer text-center rounded-0">{{m.price | currency:"":0}} VNĐ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="trangmieng" role="tabpanel" aria-labelledby="trangmieng-tab" tabindex="0">
+            <div class="row justify-content-center g-2" ng-controller="dessertCtrl">
+                <div class="col-4 " ng-repeat="d in desserts | orderBy: prop">
+                    <div class="card text-start rounded-0 d-flex flex-column">
+                        <div class="card-header text-center rounded-0"> 
+                            <a href="#!/chitietsp">
+                                {{d.name}} 
+                            </a>
+                        </div>
+                        <div class="card-body p-0 d-flex align-items-stretch">
+                            <img src="{{d.img}}" alt="" srcset="" class="img-thumbnail rounded-0 p-0 img-pizza">
+                        </div>
+                        <div class="card-footer text-center rounded-0">{{d.price | currency:"":0}} VNĐ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="thucuong" role="tabpanel" aria-labelledby="thucuong-tab" tabindex="0">
+            <div class="row justify-content-center g-2" ng-controller="waterCtrl">
+                <div class="col-4 " ng-repeat="w in waters | orderBy: prop">
+                    <div class="card text-start rounded-0 d-flex flex-column">
+                        <div class="card-header text-center rounded-0"> 
+                            <a href="#!/chitietsp">
+                                {{w.name}} 
+                            </a>
+                        </div>
+                        <div class="card-body p-0 d-flex align-items-stretch">
+                            <img src="{{w.img}}" alt="" srcset="" class="img-thumbnail rounded-0 p-0 img-pizza">
+                        </div>
+                        <div class="card-footer text-center rounded-0">{{w.price | currency:"":0}} VNĐ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

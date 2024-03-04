@@ -1,0 +1,157 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.container  {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* body {
+    background: linear-gradient(to bottom, gray 30%, black 70%);
+    background-repeat: no-repeat;
+} */
+.nav-link{
+    color: black !important;
+    text-decoration: none;
+}
+
+
+header {
+    position: relative;
+    margin: 0;
+    
+}
+
+.header-set {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-group-title {
+    position: relative;
+    top: 40px;
+    left:10px;
+    text-align: center;
+    /* font-variant: small-caps; */
+}
+
+
+.text-group-title>h1 {
+    /* font-family: Impact; */
+    font-family: 'Tilt Prism', cursive;
+    font-size: 100px;
+    /* color: white; */
+    letter-spacing: 0.3px;
+    /* text-shadow: 0 0 2px black; */
+    padding-bottom: 0px;
+    /* border-bottom: 1px dotted gray; */
+    margin: 0;
+}
+
+.text-group-title>h5 {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+.address {
+    padding: 50px;
+    background-color: #FFDEAD;
+    font-size: 25px;
+}
+
+.btn-buy {
+    padding: 5px 15px 5px 15px;
+    border: 2px;
+    border-radius: 5px;
+    background-color: #FF9900;
+    color: white;
+}
+
+.list-group-item {
+    background-color: #FFDEAD !important;
+    border: none !important;
+}
+
+.title-pizza {
+    font-family: 'Pacifico', cursive;
+    padding: 20px 0 15px 0;
+    font-weight: bold;
+}
+
+
+.mota {
+    width: 45px;
+}
+
+.form-check {
+    height: 46px;
+}
+
+.hinhanh {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.addsp {
+    height: 48px;
+    margin-left: 15px;
+}
+
+/* .scroll_articel {
+    overflow-y: auto;
+    max-height: 800px;
+} */
+
+.title-product {
+    margin: 45px 0 0 50px;
+}
+
+.infor {
+    margin: 0;
+}
+
+.luachon, .xoa {
+    text-decoration: none;
+    color: #FF9900 !important;
+    padding-right: 10px;
+}
+
+.bill {
+    padding-right: 100px;
+}
+
+.btn-outline-secondary {
+    --bs-btn-hover-bg: #FFDEAD !important;
+    --bs-btn-hover-color: dark !important;
+}
+
+.bill-detail {
+    margin: 0;
+}
+
+/* CSS sản phẩm */
+.card-header, .card-footer {
+    background-color: #FFDEAD !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.card-header>a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: bold;
+}
+
+.card-body>img-thumbnail {
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.card-body>img-thumbnail:hover {
+    transform: scale(1.1);
+}

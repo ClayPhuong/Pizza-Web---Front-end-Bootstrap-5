@@ -1,0 +1,46 @@
+<div class="row justify-content-center align-items-center g-2 m-0">
+    <div class="col-3">
+        <img src="img/dangnhap.png" alt="" class="img-fluid">
+    </div>
+    <div class="col-5">
+        <div class="card text-start rounded-0 d-flex flex-column border border-0">
+            <div class="card-header text-center rounded-0" style="background-color: white !important;"> 
+                <h4 class="card-title text-uppercase text-center" ><Strong>ĐĂNG KÝ</Strong></h4>
+            </div>
+            <div class="card-body p-0 d-flex align-items-stretch">
+                <form class="justify-content-center" name="frmLogin">
+                    <div class="mb-3">
+                        <label >Nhập họ và tên:</label>
+                        <input type="text" class="form-control" ng-model="name" name="txtname" required>
+                        <span ng-show="frmLogin.txtemail.$invalid" class="text-danger">Họ tên không được để trống nhé!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label >Số điện thoại:</label>
+                        <input type="number" class="form-control" ng-model="sdt" name="txtsdt"  maxlength="10" required>
+                        <span ng-show="frmLogin.txtemail.$invalid" class="text-danger">Số điện thoại không được bỏ trống nhé!</span>
+                    </div>
+    
+                    <div class="mb-3">
+                      <label f>Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" ng-model="email" name="txtemail" aria-describedby="emailHelp" required>
+                      <span ng-show="frmLogin.txtemail.$invalid" class="text-danger">Email không được bỏ trống nhé!</span>
+                    </div>
+                    <div class="mb-3">
+                      <label >Password</label>
+                      <input type="password" class="form-control" ng-model="pass" name="txtpass" id="exampleInputPassword1" required>
+                      <span ng-show="frmLogin.txtpass.$invalid" class="text-danger">Mật khẩu không được bỏ trống</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Xác nhận password</label>
+                        <input type="password" class="form-control" ng-model="againpass" name="txtpass" id="exampleInputPassword1" required>
+                        <span ng-show="frmLogin.txtpass.$invalid" class="text-danger">Mật khẩu không được bỏ trống</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+       
+
+    </div>
+    
+</div>

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Cocacola",
+        "img": "img/coke.jpg",
+        "price": 25000
+    },
+    {
+        "name": "Fanta cam",
+        "img": "img/fanta.jpg",
+        "price": 25000
+    },
+    {
+        "name": "Cocacola Zero",
+        "img": "img/cokezero.jpg",
+        "price": 25000
+    },
+    {
+        "name": "Fuze tea",
+        "img": "img/fuzetea.png",
+        "price": 25000
+    },
+    {
+        "name": "Fuze tea hạt chia",
+        "img": "img/fuzeteahatchia.jpg",
+        "price": 25000
+    },
+    {
+        "name": "Dasani",
+        "img": "img/dasani.jpg",
+        "price": 25000
+    },
+    {
+        "name": "Cocacola",
+        "img": "img/coke.jpg",
+        "price": 25000
+    }
+]

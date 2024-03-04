@@ -1,0 +1,116 @@
+[
+    {
+        "name": "PIZZA BÒ BEEFSTEAK PHÔ MAI KIỂU NEW YORK - NEW YORK",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/flavor1.jpg",
+        "price": 215500
+    },
+    {
+        "name": "PIZZA BÒ BEEFSTEAK PHÔ MAI KIỂU NEW YORK - NEW YORK ",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/flavor2.jpg",
+        "price": 215500
+    },
+    {
+        "name": "PIZZA BÒ BEEFSTEAK PHÔ MAI KIỂU NEW YORK - NEW YORK ",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/flavor3.jpg",
+        "price": 215500
+    },
+    {
+        "name": "PIZZA BÒ BEEFSTEAK PHÔ MAI KIỂU NEW YORK - NEW YORK",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/flavor4.jpg",
+        "price": 215500
+    },
+    {
+        "name": "PIZZA BÒ BEEFSTEAK PHÔ MAI KIỂU NEW YORK - NEW YORK",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/flavor4.jpg",
+        "price": 215500
+    },
+    {
+        "name": "PIZZA BÒ & TÔM NƯỚNG KIỂU MỸ - SURF & TURF",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/seafood1.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA HẢI SẢN XỐT MAYONNAISE - OCEAN MANIA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/seafood2.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA HẢI SẢN NHIỆT ĐỚI XỐT TIÊU - PIZZAMIN SEA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/seafood3.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA HẢI SẢN XỐT CÀ CHUA - SEAFOOD DELIGHT",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/seafood4.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA XÚC XÍCH XỐT PHÔ MAI - SAUSAGE KID MANIA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/kid1.jpg",
+        "price": 97500
+    },
+    {
+        "name": "PIZZA GÀ PHÔ MAI THỊT HEO XÔNG KHÓI",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/kid2.jpg",
+        "price": 97500
+    },
+    {
+        "name": "PIZZA NGẬP VỊ PHÔ MAI HẢO HẠNG - CHEESY MADNESS",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra1.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA THẬP CẨM THƯỢNG HẠNG - EXTRAVAGANZA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra2.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA RAU CỦ THẬP CẨM - VEGGIE MANIA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra3.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA 5 LOẠI THỊT THƯỢNG HẠNG - MEAT LOVERS",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra4.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA XÚC XÍCH Ý TRUYỀN THỐNG - PEPPERONI FEAST",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra5.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA GÀ XỐT TƯƠNG KIỂU NHẬT - TERIYAKI CHICKEN",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra6.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA DĂM BÔNG DỨA KIỂU HAWAII - HAWAIIAN",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra7.jpg",
+        "price": 117000
+    },
+    {
+        "name": "PIZZA PHÔ MAI TRUYỀN THỐNG - CHEESE MANIA",
+        "describe": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Xốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+        "img": "img/tra8.jpg",
+        "price": 117000
+    }
+]

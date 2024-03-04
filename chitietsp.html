@@ -1,0 +1,121 @@
+<div class="row m-0 mt-5" ng-controller="detailCtrl" ng-show="selectedProduct">
+    <img src="{{selectedProduct.img}}" alt="Pizza" class="col-4 mx-auto hinhanh" ng-model="selectedProductImg">
+    <div class="col-8 ">
+        <h2 ng-model="selectedProductName">{{selectedProduct.name}}</h2>
+        <h4>{{selectedProduct.price | currency:"":0}}VNĐ</h4>
+        <p>{{selectedProduct.describe}}</p>
+        <hr>
+        <div class="debanh">
+            <h5>Chọn đế bánh</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="debanh" id="demong" ng-model="debanh" value="Đế mỏng" >
+                <label class="form-check-label" for="demong">
+                  Đế mỏng 
+                </label>
+                <img src="img/demong.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="debanh" id="deday" ng-model="debanh" value="Đế dày">
+                <label class="form-check-label" for="deday">
+                    Đế dày
+                </label>
+                <img src="img/deday.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="debanh" id="devua" ng-model="debanh" value="Đế vừa">
+                <label class="form-check-label" for="devua">
+                    Đế vừa
+                </label>
+                <img src="img/devua.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+        </div>
+
+        <div class="cobanh">
+            <h5>Chọn cỡ bánh</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="cobanh" id="co9" ng-model="cobanh" value="Cỡ 9 inch">
+                <label class="form-check-label" for="co9">
+                    Cỡ 9 inch = 0₫ 
+                </label>
+                <img src="img/9inch.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="cobanh" id="co12" ng-model="cobanh" value="Cỡ 12 inch">
+                <label class="form-check-label" for="co12">
+                    Cỡ 12 inch =  50,000₫
+                </label>
+                <img src="img/12inch.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+        </div>
+
+        <div class="phomaithem">
+            <h5>Tùy chọn thêm</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phomaithem" id="themphomai" ng-model="tuychonthem" value="Thêm phô mai">
+                <label class="form-check-label" for="themphomai">
+                    Thêm phô mai 9" = 24,500₫
+                </label>
+                <img src="img/phomai1.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phomaithem" id="them2phomai" ng-model="tuychonthem" value="Gấp đôi phô mai">
+                <label class="form-check-label" for="them2phomai">
+                    Gấp đôi phô mai 9" = 44,500₫
+                </label>
+                <img src="img/phomai2.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phomaithem" id="them3phomai" ng-model="tuychonthem" value="Gấp 3 phô mai">
+                <label class="form-check-label" for="them3phomai">
+                    Gấp ba phô mai 9" = 64,000₫
+                </label>
+                <img src="img/phomai3.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+        </div>
+
+        <div class="vien">
+            <h5>Tùy chọn viền</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vien" id="vienphomai" ng-model="chonvien" value="Viền phô mai" >
+                <label class="form-check-label" for="vienphomai">
+                    Viền phô mai 9" = 58,000₫
+                </label>
+                <img src="img/phomaivien.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vien" id="vienxucxich" ng-model="chonvien" value="Viền xúc xích" >
+                <label class="form-check-label" for="vienxucxich">
+                    Viền xúc xích 9" = 68,000₫
+                </label>
+                <img src="img/xucxichvien.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vien" id="viendouble" ng-model="chonvien" value="Viền xúc xích phô mai">
+                <label class="form-check-label" for="viendouble">
+                    Viền xúc xích phô mai 9" = 97,500₫
+                </label>
+                <img src="img/phomaixucxichvien.png" class="mota float-end" alt="">
+                <hr class="border border-1 opacity-75 mt-0 ti-line-dotted">
+            </div>
+        </div>
+
+        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <button type="button" class="btn btn-outline-dark" ng-click="bot()">-</button>
+            <button type="button" class="btn btn-outline-dark disabled" ng-bind="quantity" min="1">1</button>
+            <button type="button" class="btn btn-outline-dark" ng-click="them()">+</button>
+        </div>
+        <button type="button" class="btn btn-outline-dark addsp" ng-click="addToCart(selectedProduct)">
+            Thêm vào giỏ hàng
+        </button>
+    </div>
+</div>

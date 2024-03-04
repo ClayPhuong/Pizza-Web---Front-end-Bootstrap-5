@@ -1,0 +1,48 @@
+<div class="product" ng-controller="giohangCtrl">
+    <h4 class="title-product mb-5">Giỏ hàng của bạn</h4>
+    <div class="gio" ng-hide="cartItems.length == 0">
+        <div class="row justify-content-center align-items-center g-2 m-0" ng-repeat="item in cartItems" >
+            <img src="{{item.img}}" alt="" class="col-2 img-thumbnail">
+            <div class="col-3 m-2">
+                <h4>{{item.name}}</h4>
+                <p class="infor">{{item.cobanh}}</p>
+                <p class="infor">{{item.debanh}}</p>
+                <p class="infor">{{item.tuychonthem}}</p>
+                <p class="infor">{{item.chonvien}}</p>
+                <a href="#!/chitietsp" class="luachon">Điều chỉnh</a> <a href="" class="xoa" ng-click="xoaSanPham($index)">Xóa</a>
+            </div>
+            <div class="col-2 text-center"> <strong>{{item.price | currency:"":0}}VNĐ</strong> </div>
+            <div class="col-2 justify-content-center">
+                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                    <button type="button" class="btn btn-outline-dark" ng-click="bot(item)">-</button>
+                    <button type="button" class="btn btn-outline-dark disabled"  ng-bind="item.quantity" min="1" ng-model="item.quantity"></button>
+                    <button type="button" class="btn btn-outline-dark" ng-click="them(item)">+</button>
+                </div>
+            </div>
+            <div class="col-2 text-center">
+                <p> <strong>Tổng: {{item.tong*item.quantity | currency:"":0}}VNĐ</strong> </p>
+            </div>
+        </div>
+        <hr style="margin: 30px;" >
+    
+        <div class="d-grid justify-content-end m-0 bill">
+            <div class="input-group w-100">
+                <input type="text" class="form-control" placeholder="Nhập mã khuyến mãi" aria-label="Nhập mã khuyến mãi" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Áp dụng</button>
+            </div>
+            <p class="w-100 bill-detail" ng-model="tongbill"> <strong>Tổng</strong> <span class="text-danger fw-bold float-end">{{tinhTong() | currency:"":0}} VNĐ</span></p>
+            <p class="w-100 bill-detail"> <strong>Giảm Khuyến Mãi</strong> <span class="text-danger fw-bold float-end">0₫</span></p>
+            <p class="w-100 bill-detail"> <strong>Giảm Vouchers</strong> <span class="text-danger fw-bold float-end">0₫</span></p>
+            <p class="w-100 bill-detail"> <strong>Phí Giao Hàng</strong> <span class="text-danger fw-bold float-end">0₫</span></p>
+            <button type="button" class="btn btn-danger m-0">Thanh toán <strong>{{tinhTong() | currency:"":0}} VNĐ</strong></button>
+        </div>
+    
+        <hr style="margin: 30px;">
+    
+    </div>
+    
+</div>
+<div class="row justify-content-center align-items-center g-2 m-0" ng-hide="cartItems.length > 0">
+    <img src="img/empty-cart.svg" alt="Giỏ hàng trống" width="220px" height="220px">
+    <h5 class="text-center">Giỏ hàng chưa có sản phẩm.<br>Xin mời bạn mua hàng</h5>
+</div>

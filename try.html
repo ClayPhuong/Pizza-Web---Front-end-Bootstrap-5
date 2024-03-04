@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8ttT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+    .chair {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chair.available {
+  background-color: #b5ffb4;
+  color: #000;
+}
+
+.chair.unavailable {
+  background-color: #ff8f8f;
+  color: #000;
+}
+
+.chair.selected {
+  background-color: #ffe0b3;
+  color: #000;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Chỗ ngồi</th>
+              <th>Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1D</td>
+              <td class="chair available"></td>
+            </tr>
+            <tr>
+              <td>2A</td>
+              <td class="chair unavailable"></td>
+            </tr>
+            <tr>
+              <td>2B</td>
+              <td class="chair selected"></td>
+            </tr>
+            <tr>
+              <td>2C</td>
+              <td class="chair available"></td>
+            </tr>
+            <tr>
+              <td>2D</td>
+              <td class="chair unavailable"></td>
+            </tr>
+            <tr>
+              <td>3C</td>
+              <td class="chair selected"></td>
+            </tr>
+            <tr>
+              <td>3D</td>
+              <td class="chair available"></td>
+            </tr>
+            <tr>
+              <td>4D</td>
+              <td class="chair selected"></td>
+            </tr>
+            <tr>
+              <td>4E</td>
+              <td class="chair available"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

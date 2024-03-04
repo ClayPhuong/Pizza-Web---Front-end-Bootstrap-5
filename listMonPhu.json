@@ -1,0 +1,27 @@
+[
+    {
+        "name": "GÀ XIÊN NƯỚNG SATAY",
+        "img": "img/ga1.jpg",
+        "price": 97500
+    },
+    {
+        "name": "KHAI VỊ TỔNG HỢP",
+        "img": "img/ga2.jpg",
+        "price": 97500
+    },
+    {
+        "name": "GÀ VIÊN PHÔ MAI ĐÚT LÒ",
+        "img": "img/ga3.jpg",
+        "price": 68000
+    },
+    {
+        "name": "CÁNH GÀ BBQ KIỂU MỸ (6 MIẾNG)",
+        "img": "img/ga4.jpg",
+        "price": 127000
+    },
+    {
+        "name": "CÁNH GÀ BBQ KIỂU MỸ (4 MIẾNG)",
+        "img": "img/ga5.jpg",
+        "price": 97500
+    }
+]

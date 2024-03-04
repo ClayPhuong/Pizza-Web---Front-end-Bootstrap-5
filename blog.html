@@ -1,0 +1,151 @@
+<div class="row justify-content-center align-items-center g-2 m-0">
+    <!-- Nav tabs -->
+    <ul class="nav nav-underline justify-content-center" id="myblog" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">Về Pizza's Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="false">Tin tức mới nhất</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tuyendung-tab" data-bs-toggle="tab" data-bs-target="#tuyendung" type="button" role="tab" aria-controls="tuyendung" aria-selected="false">Tuyển dụng</button>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="about" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+            <div class="table-responsive">
+                <div class="row justify-content-center align-items-center g-2 m-0">
+                    <img src="img/about1.png" alt="" class="col-5">
+                    <div class="col-5">
+                        <p> <strong> Vì sao Pizza's Home là chuyên gia giao hàng </strong> </p>
+                        <p>Pizza's Home có hơn 10.000 cửa hàng trên toàn thế giới tại hơn 74 quốc gia. Chúng tôi mang đến sự hài lòng cho hơn 1 triệu khách hàng mỗi ngày, hơn 400 triệu bánh pizza mỗi năm. Trong suốt 50 năm qua, lời hứa “giao hàng miễn phí trong 30 phút” của chúng tôi đã trở thành một quy chuẩn.</p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center align-items-center g-2 m-0">
+                    <div class="col-5">
+                        <p>Pizza's Home đảm bảo rằng đơn đặt hàng của bạn sẽ đến trong vòng 30 phút, hoặc chúng tôi sẽ gửi đến bạn một Voucher miễn phí Pizza cỡ vừa cho lần mua tiếp theo!</p>
+                        <p> <strong>Chúng tôi xin đảm bảo! Áp dụng điều kiện: </strong> </p>
+                        <p>Voucher cho 1 Pizza cỡ vừa miễn phí (9 ") trong lần đặt hàng kế tiếp <br>
+                           - Pizza's Home không xử phạt nhân viên giao hàng trễ.<br>
+                           - Pizza's Home có quyền rút lại dịch vụ giao hàng mà không cần thông báo trước.<br>
+                           - Cam kết đảm bảo về dịch vụ có thể bị tạm thu hồi vì điều kiện vận hành khó khăn để giao hàng và sẽ được thông báo tại thời điểm nhận đơn.<br>
+                           - Không áp dụng trong điều kiện thời tiết bất thường hoặc không an toàn như mưa lớn, lũ lụt, giông bão, thủy triều...<br>
+                           - Không áp dụng vào các ngày lễ.<br>
+                           - Không áp dụng cho các đơn đặt hàng trên 5 bánh pizza.<br>
+                            * Chỉ áp dụng với các khu vực chỉ định</p>
+                    </div>
+                    <img src="img/about2.png" alt="" class="col-5">
+                </div>
+
+                <div class="row justify-content-center align-items-center g-2 m-0">
+                    <img src="img/about3.png" alt="" class="col-5">
+                    <div class="col-5">
+                        <p>Pizza's Home đảm bảo bạn sẽ hài lòng! Pizza của bạn luôn được đảm bảo nóng giòn và thơm ngon khi được giao đến ngưỡng cửa nhà bạn, nếu không chúng tôi sẵn sàng đổi lại cho bạn!</p>
+                        <p> <strong> Điều kiện áp dụng: </strong> </p>
+                        <p>Tình trạng trên áp dụng khi sai/thiếu đủ lớp phủ hoặc không thêm phụ gia như đã đặt hàng. Pizza's Home sẽ thay thế đơn đặt hàng hoặc gửi tặng Voucher miễn phí Pizza cỡ vừa (9 ") cho lần mua tiếp theo. Pizza's Home có quyền rút lại dịch vụ mà không cần thông báo trước. Điều này sẽ không áp dụng trong điều kiện thời tiết bất thường hoặc xấu như mưa to, lũ lụt, bão, thủy triều ...</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="tab-pane" id="news" role="tabpanel" aria-labelledby="news-tab" tabindex="0">
+            <div class="row justify-content-center align-items-center g-2" ng-controller="blogCtrl">
+                <div class="card p-0 rounded-0 mt-5 col-5"  ng-repeat="b in blogs | orderBy: prop">
+                    <img src="{{b.imgBlog}}" class="card-img-top rounded-0" alt="Ảnh minh họa">
+                    <div class="card-body">
+                      <a class="card-title text-decoration-none">{{b.title}}</a>
+                      <a href="#" class="btn">Đọc chi tiết</a>
+                    </div>
+                    <div class="card-footer rounded-0">
+                        <p>{{b.timeupdate}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tuyendung" role="tabpanel" aria-labelledby="tuyendung" tabindex="0">
+            <h2 class="text-center pt-5">PIZZA'S HOME VIETNAM</h2>
+            <div class="row justify-content-center align-items-center g-2 m-0">
+                <div class="col-3 justify-content-center">
+                    <div class="row justify-content-center align-items-center g-2 m-0 fs-5">
+                        <i class="fa-solid fa-clock-rotate-left text-bold text-center"></i> <br>
+                        <a href="" class="text-decoration-none text-center text-black fs">
+                            <strong>Lịch sử hình thành</strong> 
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-3 justify-content-center">
+                    <div class="row justify-content-center align-items-center g-2 m-0 fs-5">
+                        <i class="fa-brands fa-pagelines text-bold text-center"></i> <br>
+                        <a href="" class="text-decoration-none text-center text-black fs">
+                            <strong>Giá trị cốt lõi</strong> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center">
+                    <div class="row justify-content-center align-items-center g-2 m-0 fs-5">
+                        <i class="fa-solid fa-award text-bold text-center"></i> <br>
+                        <a href="" class="text-decoration-none text-center text-black fs">
+                            <strong>Danh hiệu giải thưởng</strong> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 justify-content-center">
+                    <div class="row justify-content-center align-items-center g-2 m-0 fs-5">
+                        <i class="fa-solid fa-minimize text-bold text-center"></i> <br>
+                        <a href="" class="text-decoration-none text-center text-black fs">
+                            <strong>Tinh thần Pizza's Home</strong> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center pt-5">PHÚC LỢI CÔNG TY</h2>
+            <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        LƯƠNG THƯỞNG VÀ CHẾ ĐỘ ĐÃI NGỘ HẤP DẪN
+                    </h5>
+                    <p class="card-text">
+                        • Mức lương cạnh tranh, chế độ thưởng KPI theo quý, năm. <br>
+                        • Tham gia bảo hiểm full lương (BHYT, BHXH, BHTN). <br>
+                        • Tham gia các chương trình gắn kết nội bộ: Happy Friday, Year End Party, Team Building, …
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-handshake"></i>
+                        Môi trường làm việc thân thiện, trẻ trung, năng động
+                    </h5>
+                    <p class="card-text">
+                        • VFBS – Happy place to work, nơi hội tụ những cá nhân tài năng, cá tính và đầy năng lượng trong công việc. <br>
+                        • Không gian làm việc hiện đại, được trang bị đầy đủ trang thiết bị hỗ trợ công việc như: Laptop, điện thoại, phần mềm nghe gọi miễn phí 3CX, ... <br>
+                        • Môi trường làm việc trẻ trung, chuyên nghiệp. <br>
+                        • Cơ hội làm việc với các anh chị cấp quản lý nổi tiếng trong ngành F&B.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                            Chương trình đào tạo bài bản, cơ hội học tập và phát triển
+                        </h5>
+                        <p class="card-text">
+                            • Học hỏi và phát triển cùng đội ngũ những người có kinh nghiệm dẫn đầu trong ngành F&B. <br>
+                            • Tham gia khóa học đào tạo định kỳ và phát sinh của công ty để liên tục nâng cấp kiến thức, kỹ năng.
+                        </p>
+                      </div>
+                </div>
+            </div>
+            <h2 class="text-center text-uppercase pt-5">Điền <a href="" class="text-black">đơn ứng tuyển</a> ngay hôm nay!</h2>
+        </div>
+    </div>
+</div>

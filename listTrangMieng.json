@@ -1,0 +1,22 @@
+[
+    {
+        "name": "BÁNH CUỘN QUẾ XỐT LÁ DỨA",
+        "img": "img/dessert1.jpg",
+        "price": 48500
+    },
+    {
+        "name": "BÁNH CUỘN QUẾ XỐT LÁ DỨA",
+        "img": "img/dessert2.jpg",
+        "price": 48500
+    },
+    {
+        "name": "BÁNH CUỘN QUẾ XỐT SÔ-CÔ-LA",
+        "img": "img/dessert3.jpg",
+        "price": 48500
+    },
+    {
+        "name": "BÁNH CUỘN QUẾ XỐT KEM SỮA",
+        "img": "img/dessert4.jpg",
+        "price": 48500
+    }
+]

@@ -1,0 +1,16 @@
+<div class="card card-sale border border-0 m-5 " ng-controller="saleCtrl">
+    <div class="row m-0 border border-0 mb-4" ng-repeat="s in sales | orderBy: prop">
+        <div class="col-sm-3 overflow-hidden border border-2 rounded-4">
+            <a href=""><img src="{{s.img}}" class="card-img" alt=""></a>
+        </div>
+        <div class="col-sm-9 border border-2 rounded-4">
+            <div class="card-body">
+                <a href="" style="text-decoration: none; color: #FF9900; font-size: 30px;">{{s.title}}</a>
+                <hr class="title-hr mt-0 mb-2">
+                <p> <strong> {{s.content}}</strong> </p>
+                <p> <strong> {{s.time}}</strong> </p>
+                <button class="btn-buy">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+</div>
